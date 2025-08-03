@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8"/>
+  <title>霁野·拾光</title>
+  <meta name="color-scheme" content="light dark"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/glass.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center bg-main text-main font-['Noto_Sans_SC']">
+  <!-- 主题切换 -->
+  <button id="theme-toggle" class="fixed top-5 right-5 p-2 rounded-full glass-card z-50">
+    <img id="theme-icon" class="w-6 h-6" src="assets/icons/moon.svg" alt="theme"/>
+  </button>
+
+  <!-- 主卡片 -->
+  <div class="glass-card w-full max-w-lg mx-4 p-10 rounded-3xl shadow-2xl text-center">
+    <h1 class="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+      霁野·拾光
+    </h1>
+
+    <!-- 入口 1 -->
+    <a href="gallery.html?f=gallery1" class="card-link">
+      <div class="card">
+        <div class="card-img bg-gradient-to-br from-blue-400 to-purple-500"></div>
+        <span class="card-title">2024 级 2025 年歌咏比赛</span>
+      </div>
+    </a>
+
+    <!-- 入口 2 -->
+    <a href="gallery.html?f=gallery2" class="card-link">
+      <div class="card">
+        <div class="card-img bg-gradient-to-br from-pink-400 to-red-500"></div>
+        <span class="card-title">初 2022 级 / 高 2022 级毕业典礼</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- 版权 -->
+  <footer class="fixed bottom-4 text-xs opacity-60">
+    © 2025 BeiXiangGuMao / 北巷孤猫 版权所有
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>
