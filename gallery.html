@@ -6,11 +6,11 @@
   <meta name="color-scheme" content="light dark"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs@3" defer></script>
-  <link rel="stylesheet" href="css/glass.css"/>
+  <link rel="stylesheet" href="glass.css"/>
 </head>
 <body class="bg-main text-main">
   <button id="theme-toggle" class="fixed top-4 right-4 p-2 rounded-full glass-card z-50">
-    <img id="theme-icon" class="w-5 h-5" src="assets/icons/moon.svg" alt="theme"/>
+    <img id="theme-icon" class="w-5 h-5" src="moon.svg" alt="theme"/>
   </button>
 
   <div x-data="gallery()" class="p-6">
@@ -28,7 +28,7 @@
     <button @click="download" class="btn mt-6">打包下载 (<span x-text="selected.length"></span>)</button>
   </div>
 
-<script type="module" src="js/gallery.js"></script>
-<script src="js/theme.js"></script>
+<script type="module" src="gallery.js"></script>
+<script src="theme.js"></script>
 </body>
 </html>
