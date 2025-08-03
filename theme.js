@@ -1,6 +1,6 @@
 const iconSrc = {
-  light: 'assets/icons/sun.svg',
-  dark:  'assets/icons/moon.svg'
+  light: 'sun.svg',
+  dark:  'moon.svg'
 };
 
 function apply(theme) {
@@ -16,4 +16,5 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
 
 const saved = localStorage.getItem('theme') ||
               (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
 apply(saved);
